@@ -1,0 +1,91 @@
+
+.userInfo{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.userTitle{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border-radius: 100%;
+    padding: 4px 5px;
+    background-color: beige;
+    font-size: 1rem;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.msgContent{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin: 10px 10px 0 10px;
+    background-color: rgb(68, 68, 68);
+    max-width: 300px;
+    min-width: 100px;
+    min-height: 50px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    padding: 10px;
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'Poppins',sans-serif;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.msgTime{
+    font-size: 0.7rem;
+    margin-left: 20px;
+    color: grey;
+}
+
+.fileDiv{
+    font-weight: bold;
+    border: 3px solid #272727;
+}
+
+.fileDiv a{
+    color: white;
+    text-decoration: none;
+}
+
+.fi-sr-inbox-in{
+    margin-left: 5px;
+}
+
+.linkDiv{
+    width: 200px;
+}
+
+.linkDiv > div{
+    background-color: rgb(60, 60, 60);
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.linkDiv > div > p{
+    margin-left: 5px;
+}
+
+.linkDiv a{
+    color: white;
+    transition: all 1s;
+}
+
+.linkDiv a:hover{
+    color: grey;
+}
+
+.linkDiv img{
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px 5px 0 0;
+}
+

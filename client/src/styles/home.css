@@ -1,0 +1,207 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    filter: brightness(70%);
+}
+
+.msgContainer{
+    width: 600px;
+    height: 90vh;
+    position: absolute;
+    top: calc(5vh);
+    left: calc(50vw - 300px);
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.msgList{
+    width: 600px;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding: 20px 0 50px 0;  
+}
+
+.msgList::-webkit-scrollbar{
+    width: 3px;
+}
+
+.msgList::-webkit-scrollbar-thumb{
+    width: 3px;
+    border-radius: 5px;
+    background-color: rgb(65, 65, 65);
+}
+
+
+.msgContainer > h1{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    width: 600px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.5rem;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fi-sr-sign-out-alt{
+    transform: translateY(5px);
+}
+
+.sendDiv{
+    width: 570px;
+    height: 90px;
+    background-color: rgb(39, 39, 39);
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    border: solid rgb(99, 99, 99) 1px;
+}
+
+.optionsDiv{
+    width: 570px;
+    height: 20px;
+    font-size: 0.7rem;
+    color: rgb(203, 203, 203);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.fi{
+    transition: all 1s;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.fi:hover{
+    color: grey;
+}
+
+.chatText{
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    margin-left: 5px;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    resize: none;
+    height: 40px;
+    width: 500px;
+    overflow: auto;
+}
+
+.chatText::-webkit-scrollbar {
+    display: none;
+}
+
+.optionsDiv > div::after{
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: .5px;
+    background-color: rgb(98, 98, 98);
+    transform: translateY(2px);
+    margin-right: 5px;
+}
+
+.lowerDiv{
+    color: rgb(167, 167, 167);
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.fi-rr-plus-small{
+    border-radius: 100%;
+    background-color: black;
+    padding: 0 1px;
+}
+
+.fi-ss-paper-plane-top{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: green;
+}
+
+.EmojiPickerReact{
+    position: absolute !important;
+    top: 20vh;
+    left: calc(50vw - 180px);
+
+}
+
+.mentions{
+    width: 200px;
+    max-height: 400px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: calc(50vw - 100px);
+    top: calc(100vh - 200px);
+    
+}
+
+.mentions input{
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid black 1px;
+    padding: 10px 5px;
+}
+
+.mentions p{
+    background-color: grey;
+    width: 95%;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mentions p:hover{
+    background-color: rgb(109, 109, 109);
+}
+
+/* @media only screen and (max-width: 500px){ */
+@media only screen and (max-width: 614px){
+    .msgContainer, .msgList, .msgContainer, h1{
+        width: 80vw !important;
+        left: 10vw !important;
+    }
+
+    .sendDiv{
+        width: 75vw;
+    }
+
+}
